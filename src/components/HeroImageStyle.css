@@ -1,0 +1,39 @@
+.HeroImage{
+    background-color: rgba(0,0,0,.3);
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+.HeroImage:before{
+    content: '';
+    display: block;
+    background: url(../assets/heroImg.jpg) no-repeat center / cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.HeroImage__heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeroImage__heading h1{
+    font-size: 2.4rem;
+}
+
+.HeroImage__heading p{
+    font-size: 1.4rem;
+}
+
+@media screen and () {
+    .HeroImage__heading h1{
+        font-size: 20rem;
+    }
+}

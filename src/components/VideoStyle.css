@@ -1,0 +1,52 @@
+.Video {
+    height: 100vh;
+    object-fit: contain;
+    width: 100%;
+}
+
+#Video__playing {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.Video__content {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 40vh;
+    left: 0;
+
+}
+
+.Video__content h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.Video__content p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    color: #fff;
+}
+
+.Video__content .btn {
+    margin: 1rem .2rem;
+}
+
+@media screen and (max-width:640px) {
+    .Video__content h1 {
+        font-size: 3rem;
+    }
+
+    .Video__content p {
+        font-size: 1.4rem;
+    }
+}
